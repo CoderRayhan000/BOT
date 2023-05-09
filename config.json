@@ -1,0 +1,6 @@
+{
+    "activityInterval": "5",
+    "developerGuild": "1016948296222248960",
+"database": "mongodb+srv://Rayhan:Rayhanjan123@cluster0.v8hiq85.mongodb.net/?retryWrites=true&w=majority",
+"everyoneMention": false
+}
