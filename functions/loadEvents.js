@@ -5,10 +5,10 @@ function loadEvents(client) {
 
     const folders = fs.readdirSync('./events');
     for (const folder of folders) {
-        const files = fs.readdirSync(`./events/${folder}`).filter((file) => file.endsWith(".js"));
+        const files = fs.readdirSync(`./events`).filter((file) => file.endsWith(".js"));
 
         for (const file of files) {
-            const event = require(`../events/${folder}/${file}`);
+            const event = require(`../events/${file}`);
 
             if (event.rest) {
                 if(event.once)
@@ -24,7 +24,7 @@ function loadEvents(client) {
                     client.once(event.name, (...args) => event.execute(...args, client));
                 else client.on(event.name, (...args) => event.execute(...args, client));
             }
-            table.addRow(file, "loaded");
+            table.addRow(file, "Loaded");
             continue;
         }
     }
