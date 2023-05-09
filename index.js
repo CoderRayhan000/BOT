@@ -53,7 +53,6 @@ client.errorColor = parseInt(botErrorColor);
 const { handleLogs } = require('./functions/handelLogs');
 const { loadEvents } = require('./functions/loadEvents');
 const { loadCommands } = require('./functions/loadCommands');
-const { cf } = require('./functions/cf')
 
     const { GiveawaysManager } = require("discord-giveaways");
     client.giveawaysManager = new GiveawaysManager(client, {
