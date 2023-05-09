@@ -71,13 +71,13 @@ const { cf } = require('./functions/cf')
       }
     });
     
-    fs.readdir('./events/giveaway', (_err, files) => {
+    fs.readdir('./events', (_err, files) => {
       files.forEach((file) => {
         if (!file.endsWith(".js")) return;
-        const event = require(`./events/giveaway/${file}`);
+        const event = require(`./events/${file}`);
         let eventName = file.split(".")[0];
         console.log(`[Event]   🎉 Loaded: ${eventName}`);
-        client.giveawaysManager.on(eventName, (...file) => event.execute(...file, client)), delete require.cache[require.resolve(`./events/giveaway/${file}`)];
+        client.giveawaysManager.on(eventName, (...file) => event.execute(...file, client)), delete require.cache[require.resolve(`./events/${file}`)];
       })
     })
 
