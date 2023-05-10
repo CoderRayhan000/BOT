@@ -1,5 +1,5 @@
 const { SlashCommandBuilder,EmbedBuilder, Client, ChatInputCommandInteraction } = require("discord.js")
-const accountSchema = require('../../models/account')
+const accountSchema = require('../../Ray/models/account')
 
 
 module.exports = {
