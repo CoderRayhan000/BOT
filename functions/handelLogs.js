@@ -2,7 +2,7 @@ const { author } = require("canvacord");
 const { EmbedBuilder } = require("discord.js");
 
 function handleLogs(client) {
-    const logSchema = require('../models/Log');
+    const logSchema = require('../Ray/models/Log');
 
     function send_log(guildId, embed) {
         logSchema.findOne({ Guild: guildId }, async (err, data) => {
