@@ -1,5 +1,5 @@
 const { Client, ActivityType } = require("discord.js");
-const { activityInterval, database } = require('../../config.json')
+const { activityInterval, database } = require('../../Ray/config.json')
 const mongoose = require('mongoose')
 
 module.exports = {
