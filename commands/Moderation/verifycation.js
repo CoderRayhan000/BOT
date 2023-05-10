@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const {EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, DiscordAPIError} = require('discord.js');
-const verify = require('../../models/Verify')
+const verify = require('../../Ray/models/Verify')
 module.exports = {
     data: new SlashCommandBuilder()
     .setName('setup-verify')
