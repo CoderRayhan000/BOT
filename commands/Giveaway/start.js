@@ -1,6 +1,6 @@
 const Discord = require("discord.js")
 const {  ApplicationCommandOptionType, SlashCommandBuilder } = require("discord.js");
-const messages = require('../../utils/message');
+const messages = require('../../Ray/utils/message');
 const ms = require("ms")
 
 module.exports = {
