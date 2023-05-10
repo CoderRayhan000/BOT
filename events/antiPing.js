@@ -1,4 +1,4 @@
-const Schema = require('../../models/antiPing')
+const Schema = require('../../Ray/models/antiPing')
 const { PermssionBitField, EmbedBuilder } = require('discord.js')
 
 module.exports = {
