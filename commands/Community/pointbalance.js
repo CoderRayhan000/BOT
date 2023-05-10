@@ -1,10 +1,10 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js')
-const pointSchema = require('../../models/Point')
+const pointSchema = require('../../Ray/models/Point')
 
 module.exports = {
     data: new SlashCommandBuilder()
     .setName("point-balance")
-    .setDescription(" Check how many points you have !"),
+    .setDescription(" Check how many points you have!"),
 
     async execute(interaction, client) {
         let Data = await pointSchema.findOne({ User: interaction.user.id })
