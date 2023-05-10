@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, PermissionFlagsBits, EmbedBuilder, ChannelType } = require("discord.js");
-const logSchema = require('../../models/Log');
+const logSchema = require('../../Ray/models/Log');
 
 module.exports = {
     data: new SlashCommandBuilder()
