@@ -6,8 +6,8 @@ const {
     ButtonBuilder,
     ButtonStyle,
   } = require("discord.js");
-const Schema = require("../../models/AntiS");
-const AntiSwear = require('../../System/BadWords.json');
+const Schema = require("../../Ray/models/AntiS");
+const AntiSwear = require('../../Ray/System/BadWords.json');
 
 module.exports = {
   name: "messageCreate",
