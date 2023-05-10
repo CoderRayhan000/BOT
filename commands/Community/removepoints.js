@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js')
-const pointSchema = require('../../models/Point')
+const pointSchema = require('../../Ray/models/Point')
 
 
 module.exports = {
