@@ -1,5 +1,5 @@
 const { EmbedBuilder, GuildMember, AttachmentBuilder } = require("discord.js");
-const Schema = require('../../models/Join');
+const Schema = require('../../Ray/models/Join');
 const Canvas = require(`canvas`);
 const { readFile } = require('fs/promises');
 const { request } = require('undici');
