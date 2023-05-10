@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder, PermissionsBitField } = require('discord.js');
-const leaveSchema = require('../../models/Leave');
+const leaveSchema = require('../../Ray/models/Leave');
 
 
 module.exports = {
