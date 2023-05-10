@@ -1,5 +1,5 @@
 const { CommandInteraction, Client, EmbedBuilder, SlashCommandBuilder } = require('discord.js')
-const DB = require("../../models/AFKSystem")
+const DB = require("../../Ray/models/AFKSystem")
 
 module.exports = {
     data: new SlashCommandBuilder()
