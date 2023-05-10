@@ -1,4 +1,4 @@
-const cc = require('../../models/Custom');
+const cc = require('../../Ray/models/Custom');
 const { EmbedBuilder } = require('discord.js')
 module.exports = {
   name: "messageCreate",
