@@ -4,7 +4,7 @@ const {
   Client,
   ChatInputCommandInteraction,
 } = require("discord.js");
-const accountSchema = require('../../models/account');
+const accountSchema = require('../../Ray/models/account');
 
 const cooldowns = new Map();
 
