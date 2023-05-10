@@ -1,5 +1,5 @@
 const { SlashCommandBuilder,EmbedBuilder, Client, ChatInputCommandInteraction } = require("discord.js")
-const robloxSchema = require('../../models/roblox')
+const robloxSchema = require('../../Ray/models/roblox')
 
 
 module.exports = {
