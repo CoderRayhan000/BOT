@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js')
-const TD = require('../../models/TD')
+const TD = require('../../Ray/models/TD')
 
 const ap = require('../../models/Ap')
 module.exports = {
@@ -39,17 +39,10 @@ module.exports = {
             
             const sc = interaction.options.getSubcommand();
 
-            const IP = await ap.findOne({
-                User: interaction.user.id
-              })
-
+            
               if(sc === "add") {
-                if(!IP) {
-                    interaction.reply({ content: `You dont have premuim ${interaction.user.name}`})
+              
 
-                }
-
-                if(IP) {
                     const  name = interaction.options.getString('name')
                     const d = interaction.options.getString('description')
 
@@ -69,13 +62,11 @@ module.exports = {
                         .setDescription(`${name} | ${d}`)
                     ]})
     
-                }
+                
 
               } else if(sc === "check") {
-                if(!IP) {
-                    interaction.reply({ content: `You dont have premuim `, ephemeral: true})
-                } else {
-                    if(IP) {
+                {
+                  
 
                         const target = interaction.options.getUser("user")
                         const UserData = await TD.findOne({
@@ -113,7 +104,7 @@ module.exports = {
                 .setDescription(`${Data.Name} | ${Data.Description}`)
 
                 await interaction.reply({ embeds: [embed]})
-            }
+            
                           
                         } else {
                             interaction.reply({ content: `They havent made a todo list yet`})
