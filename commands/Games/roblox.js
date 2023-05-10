@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require("discord.js")
-const robloxSchema = require('../../models/roblox')
+const robloxSchema = require('../../Ray/models/roblox')
 
 module.exports = {
     data: new SlashCommandBuilder()
