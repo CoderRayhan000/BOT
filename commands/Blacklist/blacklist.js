@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js')
-const blacklist = require('../../models/Blacklist')
+const blacklist = require('../../Ray/models/Blacklist')
 
 module.exports = {
     data: new SlashCommandBuilder()
