@@ -31,7 +31,7 @@ module.exports = {
     async execute(interaction, client) {
         const { options } = interaction;
         
-if(!interaction.user.id === '971634347197202453') return;
+if(!interaction.user.id === '971634347197202453') interaction.reply({ content: `Your not a dev`})
 client.user.setActivity(`${options.getString("activity")}`, { type: ActivityType[`${options.getString("options")}`] })
 
 /*
