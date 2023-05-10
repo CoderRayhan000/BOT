@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js')
-const flag = require('../../models/flag')
+const flag = require('../../Ray/models/flag')
 
 module.exports = {
     data: new SlashCommandBuilder()
