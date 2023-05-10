@@ -1,5 +1,5 @@
 const { Message, EmbedBuilder, Embed } = require('discord.js')
-const DB = require('../../BOT/models/AFKSystem')
+const DB = require('../../Ray/models/AFKSystem')
 
 module.exports = {
     name: "messageCreate",
