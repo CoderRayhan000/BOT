@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits, PermissionsBitField } = require('discord.js')
-const Warn = require('../../models/Warn')
+const Warn = require('../../Ray/models/Warn')
 
 module.exports = {
     data: new SlashCommandBuilder()
