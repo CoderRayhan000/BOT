@@ -1,9 +1,9 @@
 const { Interaction, EmbedBuilder, ChannelType, ButtonBuilder, ButtonStyle, ActionRowBuilder } = require("discord.js");
 const fetch = require('node-fetch')
-const userSchema = require('../../models/Tick2')
-const b = require ('../../models/Blacklist')
-const a = require('../../models/alert')
-const v = require('../../models/Verify')
+const userSchema = require('../../Ray/models/Tick2')
+const b = require ('../../Ray/models/Blacklist')
+const a = require('../../Ray/models/alert')
+const v = require('../../Ray/models/Verify')
 module.exports = {
     name: 'interactionCreate',
     async execute(interaction, client) {
