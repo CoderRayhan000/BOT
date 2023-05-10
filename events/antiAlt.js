@@ -1,4 +1,4 @@
-const Schema = require("../../models/antiAlt");
+const Schema = require("../../Ray/models/antiAlt");
 const ms = require("ms");
 const { EmbedBuilder } = require("@discordjs/builders");
 
