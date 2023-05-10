@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder, PermissionsBitField } = require('discord.js');
-const welcomeSchema = require('../../models/Join');
+const welcomeSchema = require('../../Ray/models/Join');
 
 
 module.exports = {
