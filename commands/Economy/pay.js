@@ -1,11 +1,11 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js')
-const accountSchema = require('../../models/account')
+const accountSchema = require('../../Ray/models/account')
 
 
 module.exports = {
     data: new SlashCommandBuilder()
     .setName("add-money")
-    .setDescription(" Add money to a user ")
+    .setDescription(" Add $$$ to a user ")
     .addNumberOption(option => 
         option.setName("number")
         .setDescription("Number of money to add")
