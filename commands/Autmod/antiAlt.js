@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js')
-const as = require('../../models/antiAlt')
+const as = require('../../Ray/models/antiAlt')
 
 module.exports = {
     data: new SlashCommandBuilder()
